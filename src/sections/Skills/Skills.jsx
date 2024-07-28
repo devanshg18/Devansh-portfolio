@@ -1,6 +1,6 @@
 import styles from './SkillsStyles.module.css';
 import checkMarkIconDark from '../../assets/checkmark-dark.svg';
-import checkMarkIconLight from '../../assets/checkmark-light.svg';
+import checkMarkIconLight from '../../assets/map-pin-svgrepo-com.svg';
 import SkillList from '../../common/SkillList';
 import { useTheme } from '../../common/themeContext';
 
@@ -11,8 +11,8 @@ function Skills() {
   return (
     <section id="skills" className={styles.container}>
       <h1 className="sectionTitle">Skills</h1>
+      <hr/>
       <div className={styles.skillList}>
-        <hr/>
         <SkillList src={checkMarkIcon} skill="HTML" />
         <SkillList src={checkMarkIcon} skill="CSS" />
         <SkillList src={checkMarkIcon} skill="JavaScript" />
